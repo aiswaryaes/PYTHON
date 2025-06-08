@@ -134,25 +134,58 @@
 #             print(" ",end=" ")
 #     print()            
 
-
-# n=5
-# for i in range(1,5):
-#     for j in range(1,8):
-#         if i==4 or i+j==5 or j-i==3:
-#             print("*",end="")
-#         else:
-#             print(end=" ")
-#     print()  
-
-
+ 
 # n=5
 # for i in range(n,0,-1):
 #     for j in range(n-i):
 #         print("  ",end="")
 #     for k in range(2*i-1):
-#         if k == 0 or k == 2 * i - 2 or i == n:
+#         if k==0 or k==2 * i-2 or i==n:
 #             print("* ", end="")
 #         else:
 #             print("  ", end="")
 #     print()
        
+
+# n=5
+# for i in range(1,n+1):
+#     for j in range(n-i):
+#         print("  ",end="")
+#     for k in range(2*i-1):
+#         if k==0 or k==2 * i-2 or i==n:
+#             print("* ", end="")
+#         else:
+#             print("  ", end="")
+#     print()
+
+
+# n=5
+# for i in range(1,n+1):
+#     for j in range(n-i):
+#         print("  ",end="")
+#     for k in range(2*i-1):
+#         if k==0 or k==2 * i-2 :
+#             print("* ", end="")
+#         else:
+#             print("  ", end="")
+#     print()
+# for i in range(n-1,0,-1):
+#     for j in range(n-i):
+#         print("  ",end="")
+#     for k in range(2*i-1):
+#         if k==0 or k==2 * i-2:
+#             print("* ", end="")
+#         else:
+#             print("  ", end="")
+#     print()
+
+
+# a=1
+# n=4
+# for i in range(0,n):
+#     for j in range(0,i+1):
+#         print(a,end=" ")
+#         a+=1
+#     print()    
+
+
