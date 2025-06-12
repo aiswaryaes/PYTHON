@@ -17,24 +17,45 @@ while True:
         acc_data['Initial balance']=ini_balance
         Account[acc_no]=acc_data
         print("Your account created successfully")
-#deposite money into the account
+#deposit money into the account
     elif option==2:
         acc_no=int(input("Enter the account number :"))
-        if 
-         deposite=int(input("Enter the amount :"))
-         if deposite >= 0:
-          acc_data['Initial balance'] += deposite
-          print("Money dposited successfully.",deposite)
+        if acc_no in Account:
+            deposit=int(input("Enter the amount :"))
+            if deposit>=0:
+                Account[acc_no]['Initial balance'] += deposit
+                print("Money dposited successfully.",deposit)
+            else:
+                print("Invalid deposit amount")
+        else:
+            print("Account not found")             
 #withdrow money from the account
     elif option==3:
-        acc_no=int(input("Enter the account number :"))  
-        withdraw=int(input("Enter the amount :")) 
-        if withdraw >= 0:
-            Account['Initial balance'] -= withdraw
-            print("Money withdrawed successfully.",Account) 
+        acc_no=int(input("Enter the account number :"))
+        if acc_no in Account:  
+            withdraw=int(input("Enter the amount :")) 
+            if withdraw>=0:
+                Account[acc_no]['Initial balance']-=withdraw
+                print("Money withdrawed successfully.",withdraw)
+            else:
+                print("Invalid amount")
+        else:
+            print("Account not found")  
 #display account details
     elif option==4:
-        print(Account)
+        acc_no=int(input("Enter the account number :"))
+        if acc_no in Account:
+             acc = Account[acc_no]
+             print("..........ACCOUNT DETAILS..........")
+             print(Account[acc_no])
+        else:
+            print("Account not found")
+#exit from the system
+    elif option==5:
+        print("Exit.....")
+
+
+            
 
         
 
